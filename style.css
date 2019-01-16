@@ -1,35 +1,94 @@
 
-body{
+:root{
+    --color-gris: rgb(238, 237, 237);
+}
 
+body{
+    background:rgb(48, 48, 48);
 }
 
 .bloque{
-    width: 100vh;
+    width: 80vw;
     height: 70vh;
     margin: auto;
     display:flex;
     flex-flow: row wrap;
     justify-content: center;
-    background : gray;
+    background:rgb(255, 255, 255);
 }
 
 h1{
+    background : linear-gradient(180deg,rgb(255, 255, 255), rgb(228, 228, 228));
+    color: rgb(134, 134, 134);
     width:100%;
-    height:7vh;
+    height:3.5vw;
     margin:0px;
-    padding-top:2vh;
+    padding-top:3vh;
     text-align:center;
-    background:rosybrown;
 }
 
 .formulario{
-    background : red;
-    width:50%;
-
+    width:40%;
+    height:89%;
+    margin:1vw;
+    display:flex;
+    flex-flow: column wrap;
 }
 
 .info{
     background : blue;
-    width:50%;
-    height:100%;
+    width:40%;
+    height:89%;
+}
+
+.cuadro{
+    background:var(--color-gris);
+    width: 90%;
+    height:3vh;
+}
+
+titulo{
+    color:rgb(75, 75, 75);
+    padding-top:2vh;
+    font-weight: bold;
+}
+
+.cuadro-boton{
+    height:3vh;
+    width: 13vw;
+    margin-top: 3vh;
+    align-self: flex-start;
+    border-radius: 10%;
+    color:#fff;
+    background-color: rgb(56, 102, 187)
+}
+
+.box-genero{
+    height:4vh;
+    width: 90%;
+    background:var(--color-gris);
+    display:flex;
+    align-items: center;
+}
+.box-conocimientos{
+    height:4vh;
+    width: 90%;
+    background:var(--color-gris);
+    display:flex;
+    align-items: center;
+}
+
+.elemento{
+    margin-left:1.5vw;
+}
+
+@media(max-width: 1000px){
+    .bloque{
+        width: 100vw;
+        height: 100vw;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background : gray;
+    }
 }

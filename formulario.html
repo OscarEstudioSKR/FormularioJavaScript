@@ -12,7 +12,35 @@
     <div class="bloque">
         <h1>Únete a la comunidad</h1>
         <form class="formulario" action="registrar" name="formulario-registro">
-            formulario
+            
+            <!-- Formulario  -->
+
+            <titulo>Nombre</titulo>
+            <br>
+            <input class="cuadro" type="text" name="nombre" id="nombre" placeholder="Introduce un nombre">
+            <br>
+            <titulo>Correo</titulo>
+            <br>
+            <input class="cuadro" type="email" name="correo" id="correo" placeholder="Correo" required>
+            <br>
+            <titulo>Genero</titulo>
+            <br>
+            <div class="box-genero"> 
+                <input class="elemento" type="radio" name="sexo" id="hombre" value="hombre">Hombre  
+                <input class="elemento" type="radio" name="sexo" id="mujer" value="mujer">Mujer
+            </div>        
+            <br>
+            <titulo>Conocimiento</titulo>
+            <br>
+            <div class="box-conocimientos">
+                <input class="elemento" type="checkbox" name="html">Html  
+                <input class="elemento" type="checkbox" name="css">Css
+                <input class="elemento" type="checkbox" name="javaScript">JavaScript  
+                <input class="elemento" type="checkbox" name="phyton">Phyton
+            </div>
+            
+            <br>
+            <input class="cuadro-boton" type="submit" id="boton-enviar" name ="boton-enviar" value="Enviar">
         </form>
         <div class="info">
             info
