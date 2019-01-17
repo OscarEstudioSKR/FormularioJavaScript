@@ -11,38 +11,36 @@
 <body>
     <div class="bloque">
         <h1>Únete a la comunidad</h1>
-        <form class="formulario" action="registrar" name="formulario-registro">
+        <form class="formulario" action="" name="formulario-registro" onsubmit="return validar();">
             
             <!-- Formulario  -->
 
-            <titulo>Nombre</titulo>
-            <br>
-            <input class="cuadro" type="text" name="nombre" id="nombre" placeholder="Introduce un nombre">
-            <br>
-            <titulo>Correo</titulo>
-            <br>
-            <input class="cuadro" type="email" name="correo" id="correo" placeholder="Correo" required>
-            <br>
-            <titulo>Genero</titulo>
-            <br>
+            <titulo>Nombre</titulo><br>
+            <input class="cuadro" type="text" name="nombre" id="nombre" placeholder="Introduce un nombre"><br>
+
+            <titulo>Correo</titulo><br>
+            <input class="cuadro" type="email" name="correo" id="correo" placeholder="Correo" required><br>
+
+            <titulo>Genero</titulo><br>
             <div class="box-genero"> 
                 <input class="elemento" type="radio" name="sexo" id="hombre" value="hombre">Hombre  
                 <input class="elemento" type="radio" name="sexo" id="mujer" value="mujer">Mujer
-            </div>        
-            <br>
-            <titulo>Conocimiento</titulo>
-            <br>
+            </div><br>
+
+            <titulo>Conocimiento</titulo><br>
             <div class="box-conocimientos">
                 <input class="elemento" type="checkbox" name="html">Html  
                 <input class="elemento" type="checkbox" name="css">Css
                 <input class="elemento" type="checkbox" name="javaScript">JavaScript  
                 <input class="elemento" type="checkbox" name="phyton">Phyton
-            </div>
-            
-            <br>
+            </div><br>
+
             <input class="cuadro-boton" type="submit" id="boton-enviar" name ="boton-enviar" value="Enviar">
         </form>
+
+
         <div class="info">
+
             <h3>¿Como funcionamos?</h3>
             <p>Mi aliquam sapien pretium quisque feugiat tempor tempus nascetur <strong>platea</strong>, ultricies purus cubilia risus ac commodo conubia nibh erat mus, venenatis rutrum viverra parturient etiam fusce himenaeos nunc. Neque mi arcu gravida aenean inceptos sollicitudin natoque dictum. </p>
             <h3>¿Que ofrecemos?</h3>
