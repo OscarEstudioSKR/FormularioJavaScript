@@ -1,10 +1,18 @@
 
 
 function validar() {
-    var nombre, correo, sexo, gustos;
-        nombre = document.getElementById("nombre").value;
-        correo = document.getElementById("correo").value;
-        sexo = document.getElementsByName("sexo").value;
+    var nombre, correo, sexo;
+    
+    nombre = document.getElementById("nombre").value;
+    correo = document.getElementById("correo").value;
+    var arrSexo = document.getElementsByName("sexo");
+    var arrGustos = document.getElementsByName("conocimientos");
+
+    for(var i = 0; i < arrSexo.length;i++){
+        if(arrSexo[i].checked){sexo = arrSexo[i].value;          
+        }
+    }
+
 
 
     expresion = /\w+@\w+\.+[a-z]/;
@@ -28,15 +36,20 @@ function validar() {
         confirmar(
             nombre, 
             correo,
-            sexo);
+            sexo,
+            arrGustos);
     }     
 }
 
-function confirmar(nombre, correo, sexo){
+function confirmar(nombre, correo, sexo, arrGustos){
+
+    //Ocultar / Mostrar elementos
     document.getElementById("ocultar1").style.display = "none";
     document.getElementById("ocultar2").style.display = "none";
     document.getElementById("mostrar1").style.display = "block";
+    
+    //Cambiar texto del elemento "nombre-en-pantalla"
     var a = document.getElementById("nombre-en-pantalla");
-    a.innerText = sexo;
+    a.innerText = nombre;
 }
         
