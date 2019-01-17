@@ -109,3 +109,16 @@ p{
     text-align:justify;
 }
 
+.bloque-confirmar{
+    width: 60vw;
+    height:40vh;
+    background: #fff;
+    color:rgb(112, 112, 112);
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content:center;
+    
+
+}

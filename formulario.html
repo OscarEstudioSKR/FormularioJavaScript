@@ -11,7 +11,7 @@
 <body>
     <div class="bloque">
         <h1>Únete a la comunidad</h1>
-        <form class="formulario" action="" name="formulario-registro" onsubmit="return validar();">
+        <form class="formulario" id="ocultar1" action="#" name="formulario-registro" onsubmit="return validar();">
             
             <!-- Formulario  -->
 
@@ -23,8 +23,9 @@
 
             <titulo>Genero</titulo><br>
             <div class="box-genero"> 
-                <input class="elemento" type="radio" name="sexo" id="hombre" value="hombre">Hombre  
-                <input class="elemento" type="radio" name="sexo" id="mujer" value="mujer">Mujer
+                    <input class="elemento" type="radio" name="sexo" value="mujer" checked>Mujer
+                    <input class="elemento" type="radio" name="sexo" value="hombre">Hombre  
+                
             </div><br>
 
             <titulo>Conocimiento</titulo><br>
@@ -35,11 +36,11 @@
                 <input class="elemento" type="checkbox" name="phyton">Phyton
             </div><br>
 
-            <input class="cuadro-boton" type="submit" id="boton-enviar" name ="boton-enviar" value="Enviar">
+            <input class="cuadro-boton" type="submit" id="boton-enviar" value="Enviar">
         </form>
 
 
-        <div class="info">
+        <div class="info" id="ocultar2">
 
             <h3>¿Como funcionamos?</h3>
             <p>Mi aliquam sapien pretium quisque feugiat tempor tempus nascetur <strong>platea</strong>, ultricies purus cubilia risus ac commodo conubia nibh erat mus, venenatis rutrum viverra parturient etiam fusce himenaeos nunc. Neque mi arcu gravida aenean inceptos sollicitudin natoque dictum. </p>
@@ -48,6 +49,13 @@
             <h3>¿Por qué participar?</h3>
             <p>Mi aliquam sapien pretium quisque <strong>feugiat</strong> tempor tempus nascetur platea, ultricies purus cubilia risus ac commodo conubia nibh erat mus, <strong>venenatis</strong> rutrum viverra parturient etiam fusce himenaeos nunc. Neque mi arcu gravida aenean inceptos sollicitudin natoque dictum. </p>
         
+        </div>
+        <div id="mostrar1" style="display:none">
+            <div class="bloque-confirmar">
+                <img src="dedoArriba.png" alt="Ok" width="60vh" height="60vh">
+                <h3>Gracias por unirte a la comunidad <nom id="nombre-en-pantalla">desconocido</nom>!</h3>
+            </div>
+            
         </div>
     </div>
     
