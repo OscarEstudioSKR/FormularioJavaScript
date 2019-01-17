@@ -84,6 +84,7 @@ titulo{
     align-items: center;
     border-style: inset;
     border: 2px inset rgb(240, 239, 239);
+    color:rgb(95, 95, 95);
 
 }
 .box-conocimientos{
@@ -93,10 +94,12 @@ titulo{
     display:flex;
     align-items: center;
     border: 2px inset rgb(240, 239, 239);
+    color:rgb(95, 95, 95);
 }
 
 .elemento{
     margin-left:1vw;
+    
 }
 
 h3{
